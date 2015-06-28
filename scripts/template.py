@@ -21,8 +21,8 @@ for i in range(0, len(content)):
 		f = open(name).read()
 		print f
 	else:
-		keys = content[i].strip().replace(" ", "").split("->")[0].split(" ")
-		values = content[i].strip().replace(" ", "").split("->")[1].split(" ")
+		keys = content[i].strip().split("->")[0].strip().split(" ")
+		values = content[i].strip().split("->")[1].strip().split(" ")
 		print keys
 		print values
 		for j in range(0, len(keys)):
